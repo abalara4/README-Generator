@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 import inquirer from 'inquirer';
 import fs from 'fs';
-import generateMarkdown from './Develop/utils/generateMarkdown';
+import generateMarkdown from './utils/generateMarkdown.js';
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -13,7 +13,7 @@ const questions = [
         {
         type: 'input',
         name: 'description',
-        message: 'Please provide a description of your project.',
+        message: 'Please provide a description of your project:',
         },
         {
         type: 'input',
@@ -23,7 +23,7 @@ const questions = [
         {
         type: 'input',
         name: 'usage',
-        message: 'Please provide usage information for your project.',
+        message: 'Please provide usage information for your project:',
         },
         {
         type: 'input',
@@ -33,7 +33,7 @@ const questions = [
         {
         type: 'input',
         name: 'tests',
-        message: 'Please provide test instructions for your project.',
+        message: 'Please provide test instructions for your project',
         },
         {
         type: 'list',
