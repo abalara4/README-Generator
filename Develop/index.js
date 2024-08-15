@@ -38,7 +38,7 @@ const questions = [
         {
         type: 'list',
         name: 'license',
-        message: 'What license is used for your project.',
+        message: 'What license is used for your project?',
         choices: ['MIT', 'GNU GPLv3', 'Apache 2.0', 'ISC', 'None'],
         },
         {
@@ -46,12 +46,17 @@ const questions = [
         name: 'github',
         message: 'What is your GitHub username?',
         },
+        {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?',
+        },
     ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
-    err ? console.error(err) : console.log('Successfully created README.md!')
+    err ? console.error(err) : console.log('You have successfully created the README.md!')
     );
 }
 
