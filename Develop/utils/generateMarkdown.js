@@ -36,7 +36,7 @@ function renderLicenseSection(license) {
     if (license === 'None') {
         return '';
     } else {
-        return `## License
+        return`## License
         This project is licensed under the ${license} license.`
     }
 }
@@ -45,6 +45,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
+  ${renderLicenseLink(data.license)}
 
   ## Description
   ${data.description}
@@ -72,8 +73,7 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}
 
   ## Questions
-  If you have any questions, please contact me at ${data.email}. You can find more of my work at [${data.github}](https://github.com/${data.github}).
-}`;
+  If you have any questions, please contact me at ${data.email}. You can find more of my work at [${data.github}](https://github.com/${data.github}).`;
 }
 
 export default generateMarkdown;
