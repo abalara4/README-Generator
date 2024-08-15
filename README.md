@@ -20,13 +20,16 @@ This project was created by Alex Balara with the assistance and utilization of X
 
 ## Visuals
 This image shows the generated README File that was used to demonstrate the functionality of this project as depicted in the screencastify video:
-![alt text](image.png)
+![alt text](Example-Screenshot.png)
 
 
 
 ## Links
-The below links provdes a walk through of the functionality of the the README Generator:
+The below links provides a walk through of the functionality of the the README Generator:
 https://app.screencastify.com/v3/watch/GxVIybYPLM9bHt5zoPGy
+
+The below link will navigate to the GitHub Repository for this project:
+https://github.com/abalara4/README-Generator.git
 
 ## License
 None
